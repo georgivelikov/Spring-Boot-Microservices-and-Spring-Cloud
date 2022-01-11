@@ -1,16 +1,15 @@
-package com.appsdeveloperblog.photoapp.users.controller;
+package com.appsdeveloperblog.photoapp.accounts.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/accounts")
+public class AccountController {
 
     @GetMapping("/status/check")
     public String status() {
-	return "USERS SERVICE WORKING!";
+	return "ACCOUNTS SERVICE WORKING!";
     }
-
 }
