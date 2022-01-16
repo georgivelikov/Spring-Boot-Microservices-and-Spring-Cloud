@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.photoapp.users;
+package com.appsdeveloperblog.photoapp.api.users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
