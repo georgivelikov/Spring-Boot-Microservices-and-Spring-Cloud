@@ -1,7 +1,6 @@
 package com.appsdeveloperblog.photoapp.api.users.security;
 
-import com.appsdeveloperblog.app.ws.SpringApplicationContext;
-import com.appsdeveloperblog.app.ws.security.AppProperties;
+import com.appsdeveloperblog.photoapp.api.users.SpringApplicationContext;
 
 public class SecurityConstants {
 
