@@ -8,6 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.appsdeveloperblog.photoapp.api.users.security.AppProperties;
+
 @SpringBootApplication
 @EnableDiscoveryClient
 public class PhotoAppUsersApiApplication extends SpringBootServletInitializer {
@@ -26,12 +28,14 @@ public class PhotoAppUsersApiApplication extends SpringBootServletInitializer {
 	return new BCryptPasswordEncoder();
     }
 
-    /*
-     * @Bean public SpringApplicationContext getSpringApplicationContext() { return
-     * new SpringApplicationContext(); }
-     * 
-     * @Bean(name = "AppProperties") public AppProperties getAppProperties() {
-     * return new AppProperties(); }
-     */
+    @Bean
+    public SpringApplicationContext getSpringApplicationContext() {
+	return new SpringApplicationContext();
+    }
+
+    @Bean(name = "AppProperties")
+    public AppProperties getAppProperties() {
+	return new AppProperties();
+    }
 
 }
